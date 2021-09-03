@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                text-align: center;
+            }
+            form input{
+            width: 25%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #4CAF50;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            h1{
+                font-family: sans-serif;
+                text-align: center;
+                color: green;
+            }
+    </style>
+    </head>
+    
+    <body style="background-color: black">
+        <h1>Login</h1>
+        <!--<p style="color: red" >${MSGerro}</p>-->
+        <form action="ServControl?var=login" method="post" >
+            <input type="text" name="nome" placeholder="Nome do Usuário" required>
+            <br>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <br>
+            <input type="submit" value="Entrar">
+        </form>
+    </body>
+</html>
